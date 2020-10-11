@@ -10,7 +10,10 @@ st.title("Let's predict the occupancy of the room. Lets go")
 temp = st.sidebar.slider("Temperature", 19.0, 23.2)
 hum = st.sidebar.slider("Humidity", 16.5, 39.2)
 
-df_eco = pd.read_csv('C:/Users/ulzii/OneDrive/2. CBS semester 3/2. Business Analytics II/Class material/Module 2 - Powerful Predictions/Cases/Trump and EcoLights LLC/EcoLights.csv')
+url = 'https://drive.google.com/file/d/1PLGLVuz1wKFY47GNnOq3YY8ueiZy-hh7/view?usp=sharing'
+path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+
+df_eco = pd.read_csv(path)
 
 raw_datasets = {}
 raw_datasets["training_data"] = df_eco
