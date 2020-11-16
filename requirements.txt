@@ -3,3 +3,8 @@ mpu==0.23.1
 streamlit==0.71.0
 uszipcode==0.2.4
 numpy==1.18.5
+scikit-learn==0.23.2
+scipy==1.5.2
+sklearn==0.0
+pickleshare==0.7.5
+patsy==0.5.1
